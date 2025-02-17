@@ -1,3 +1,4 @@
+#java
 [language-server]
 jdtls = { command = "jdtls" }
 language-server = { command = "jdtls", args = [
@@ -16,14 +17,14 @@ language-servers = [ "jdtls" ]
 
 
 
-
-
-
+#latex
 [language-server.texlab.config.texlab.build]
 onSave = true
 
 
 
+
+#JS and Ts
 [[language]]
 name = "javascript"
 language-servers = [
@@ -37,13 +38,34 @@ language-servers = [
   "typescript-language-server",
   "vscode-eslint-language-server",
 
+
+
+
+#Python
 ]
 [[language]]
 name = "python"
 language-servers = [ "pyright" ]
+
+
+
+
+#C
 [[language]]
 name = "c"
 language-servers = ["clangd"]
+
+
+
+
+#HTML
 [[language]]
 name = "html"
 language-servers = ["vscode-html-language-server"]
+
+
+
+#lua
+[[language]]
+name = "lua"
+language-servers = ["lua-language-server"]
