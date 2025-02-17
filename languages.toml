@@ -1,0 +1,49 @@
+[language-server]
+jdtls = { command = "jdtls" }
+language-server = { command = "jdtls", args = [
+  "-data", "/home/<USER>/.cache/jdtls/workspace"
+  ]}
+
+[[language]]
+name = "java"
+scope = "source.java"
+injection-regex = "java"
+file-types = ["java"]
+roots = ["pom.xml", "build.gradle", ]
+indent = { tab-width = 4, unit = "    " }
+language-servers = [ "jdtls" ]
+
+
+
+
+
+
+
+[language-server.texlab.config.texlab.build]
+onSave = true
+
+
+
+[[language]]
+name = "javascript"
+language-servers = [
+  "typescript-language-server", # optional
+  "vscode-eslint-language-server",
+]
+
+[[language]]
+name = "typescript"
+language-servers = [
+  "typescript-language-server",
+  "vscode-eslint-language-server",
+
+]
+[[language]]
+name = "python"
+language-servers = [ "pyright" ]
+[[language]]
+name = "c"
+language-servers = ["clangd"]
+[[language]]
+name = "html"
+language-servers = ["vscode-html-language-server"]
