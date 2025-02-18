@@ -77,3 +77,13 @@ language-servers = ["lua-language-server"]
 [[language]]
 name = "css"
 language-servers = ["vscode-css-language-server"]
+
+
+
+
+#Rust
+[[language]]
+name = "rust"
+language-servers = ["rust-analyzer"]
+auto-format = true  
+
