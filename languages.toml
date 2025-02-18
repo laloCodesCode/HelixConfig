@@ -18,8 +18,9 @@ language-servers = [ "jdtls" ]
 
 
 #latex
-[language-server.texlab.config.texlab.build]
-onSave = true
+[[language]]
+name = "latex"
+language-servers = ["texlab"]
 
 
 
