@@ -1,2 +1,9 @@
 
 theme= "boo_berry"
+
+#Make errors look nicer
+[editor]
+end-of-line-diagnostics = "hint"
+
+[editor.inline-diagnostics]
+cursor-line = "error"
