@@ -69,3 +69,11 @@ language-servers = ["vscode-html-language-server"]
 [[language]]
 name = "lua"
 language-servers = ["lua-language-server"]
+
+
+
+
+#CSS
+[[language]]
+name = "css"
+language-servers = ["vscode-css-language-server"]
